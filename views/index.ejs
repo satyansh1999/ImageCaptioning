@@ -1,0 +1,21 @@
+<%- include("partials/header")%>
+
+<div class="container-fluid text-center mb-0">
+    <div class="jumbotron pt-1 pt-md-4 pb-4 mb-0">
+        <div class="display-3 font-weight-bold text-secondary">Welcome to PicTalk</div>
+        <div class="text-secondary mt-3 mt-md-4 px-1 px-sm-3 px-md-5">I will try to describe any image you submit using Convolutional Nueral Networks and Recurrent Nueral Networks. The images submitted are not saved anywhere.</div>
+    </div>
+</div>
+
+<div class="w-100 d-flex flex-column align-items-center justify-content-center mt-4 pb-4 px-md-5 px-2 border">
+    <h2 class="font-weight-bold text-secondary my-2 pt-1">Upload an image</h2>
+    <form class="form text-center w-100" action="/imagecap/caption" method="POST" enctype="multipart/form-data">
+        <input class="myImageInput form-control text-center mt-2" type="file" placeholder="image" name ="file" accept="image/*"">
+        <p class="text-secondary font-weight-light my-1">OR</p>
+        <input class="myInput form-control my-2" type="text" placeholder="Image URL" name ="Url">
+        <textarea class="myInput form-control mt-3 mb-2" name="Desc"  rows="5" placeholder="Description"><%= text %></textarea>
+        <input type="submit" class="btn btn-md btn-outline-dark mt-2 px-4" value="Get Description">
+    </form>
+</div>
+
+<%- include("partials/footer")%>

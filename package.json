@@ -1,0 +1,19 @@
+{
+  "name": "image_caption",
+  "version": "1.0.0",
+  "description": "ML project on image captioning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Satyansh Singh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-sanitizer": "^1.0.6",
+    "method-override": "^3.0.0"
+  }
+}
